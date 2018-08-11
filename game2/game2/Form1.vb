@@ -17,6 +17,7 @@
 
 
     Private Sub Form1_KeyDown1(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
+        '//////Movimiento/////
         If e.KeyCode = Keys.Right Then
             caminar1 = 1
             movimiento.Enabled = True
@@ -226,6 +227,7 @@
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         PictureBox2.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
+
 
     End Sub
 

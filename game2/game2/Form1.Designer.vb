@@ -129,7 +129,7 @@ Partial Class Form1
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(583, 150)
+        Me.PictureBox2.Location = New System.Drawing.Point(587, 159)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(137, 198)
         Me.PictureBox2.TabIndex = 10
@@ -139,7 +139,7 @@ Partial Class Form1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = Global.game2.My.Resources.Resources.snap6
-        Me.PictureBox1.Location = New System.Drawing.Point(135, 150)
+        Me.PictureBox1.Location = New System.Drawing.Point(195, 159)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(120, 201)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -182,6 +182,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(858, 491)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel5)
