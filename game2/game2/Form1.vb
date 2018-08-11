@@ -18,12 +18,16 @@
 
     Private Sub Form1_KeyDown1(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
         '//////Movimiento/////
+
+        '<caminar a la derecha>'
         If e.KeyCode = Keys.Right Then
             caminar1 = 1
             movimiento.Enabled = True
             animacion_quieto = 0
             animacion_caminar = 1
         End If
+
+        '<saltar>'
         If e.KeyCode = Keys.Up Then
             salto = 1
             animacion_quieto = 0
@@ -31,12 +35,16 @@
             gravedad.Enabled = True
 
         End If
+
+        '<caminar a la izquierda>'
         If e.KeyCode = Keys.Left Then
             caminar2 = 1
             animacion_quieto = 0
             animacion_caminar = 2
             movimiento.Enabled = True
         End If
+
+
         If e.KeyCode = Keys.A Then
             ataque = 1
         End If
@@ -114,6 +122,7 @@
         PictureBox1.Location = New Point(PictureBox1.Location.X, PictureBox1.Location.Y + 1)
         If PictureBox1.Location.Y = Panel1.Location.Y - 200 Then
             caida.Enabled = False
+            gravedad.Enabled = False
             animacion_quieto = 1
 
         End If
