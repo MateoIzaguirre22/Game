@@ -1,0 +1,18 @@
+C:\Users\Mateo\AppData\Local\Temporary Projects\game2\bin\Debug\game2.exe
+C:\Users\Mateo\AppData\Local\Temporary Projects\game2\bin\Debug\game2.pdb
+C:\Users\Mateo\AppData\Local\Temporary Projects\game2\bin\Debug\game2.xml
+C:\Users\Mateo\AppData\Local\Temporary Projects\game2\obj\x86\Debug\game2.Form1.resources
+C:\Users\Mateo\AppData\Local\Temporary Projects\game2\obj\x86\Debug\game2.Resources.resources
+C:\Users\Mateo\AppData\Local\Temporary Projects\game2\obj\x86\Debug\game2.vbproj.GenerateResource.Cache
+C:\Users\Mateo\AppData\Local\Temporary Projects\game2\obj\x86\Debug\game2.exe
+C:\Users\Mateo\AppData\Local\Temporary Projects\game2\obj\x86\Debug\game2.xml
+C:\Users\Mateo\AppData\Local\Temporary Projects\game2\obj\x86\Debug\game2.pdb
+C:\Users\Mateo\documents\visual studio 2010\Projects\game2\game2\obj\x86\Debug\game2.exe
+C:\Users\Mateo\documents\visual studio 2010\Projects\game2\game2\obj\x86\Debug\game2.xml
+C:\Users\Mateo\documents\visual studio 2010\Projects\game2\game2\obj\x86\Debug\game2.pdb
+C:\Users\Mateo\documents\visual studio 2010\Projects\game2\game2\bin\Debug\game2.exe
+C:\Users\Mateo\documents\visual studio 2010\Projects\game2\game2\bin\Debug\game2.pdb
+C:\Users\Mateo\documents\visual studio 2010\Projects\game2\game2\bin\Debug\game2.xml
+C:\Users\Mateo\documents\visual studio 2010\Projects\game2\game2\obj\x86\Debug\game2.Form1.resources
+C:\Users\Mateo\documents\visual studio 2010\Projects\game2\game2\obj\x86\Debug\game2.Resources.resources
+C:\Users\Mateo\documents\visual studio 2010\Projects\game2\game2\obj\x86\Debug\game2.vbproj.GenerateResource.Cache
