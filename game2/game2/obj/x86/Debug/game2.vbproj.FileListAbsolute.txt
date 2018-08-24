@@ -25,3 +25,12 @@ C:\Users\Mateo\Documents\GitHub\Game\game2\game2\bin\Debug\game2.xml
 C:\Users\Mateo\Documents\GitHub\Game\game2\game2\obj\x86\Debug\game2.Form1.resources
 C:\Users\Mateo\Documents\GitHub\Game\game2\game2\obj\x86\Debug\game2.Resources.resources
 C:\Users\Mateo\Documents\GitHub\Game\game2\game2\obj\x86\Debug\game2.vbproj.GenerateResource.Cache
+C:\Users\Renzo\Downloads\Game-master\game2\game2\obj\x86\Debug\game2.exe
+C:\Users\Renzo\Downloads\Game-master\game2\game2\obj\x86\Debug\game2.xml
+C:\Users\Renzo\Downloads\Game-master\game2\game2\obj\x86\Debug\game2.pdb
+C:\Users\Renzo\Downloads\Game-master\game2\game2\bin\Debug\game2.exe
+C:\Users\Renzo\Downloads\Game-master\game2\game2\bin\Debug\game2.pdb
+C:\Users\Renzo\Downloads\Game-master\game2\game2\bin\Debug\game2.xml
+C:\Users\Renzo\Downloads\Game-master\game2\game2\obj\x86\Debug\game2.Form1.resources
+C:\Users\Renzo\Downloads\Game-master\game2\game2\obj\x86\Debug\game2.Resources.resources
+C:\Users\Renzo\Downloads\Game-master\game2\game2\obj\x86\Debug\game2.vbproj.GenerateResource.Cache
