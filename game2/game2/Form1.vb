@@ -6,7 +6,7 @@
     Dim animacion_caminar As Integer
     Dim salto As Integer
     Dim pared As Integer
-    Dim desplazamiento As Integer
+    Dim desplazamiento As Double = 1
     Dim vida As Integer = 200
     Dim power As Integer = 100
     Dim ataque As Integer
@@ -118,9 +118,10 @@
 
 
     Private Sub Timer3_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles caida.Tick
-        desplazamiento = desplazamiento + 1
-        PictureBox1.Location = New Point(PictureBox1.Location.X, PictureBox1.Location.Y + 1)
-        If PictureBox1.Location.Y = Panel1.Location.Y - 200 Then
+        desplazamiento = desplazamiento + 0.05
+        PictureBox1.Location = New Point(PictureBox1.Location.X, PictureBox1.Location.Y + desplazamiento)
+        If PictureBox1.Location.Y + PictureBox1.Height > Panel1.Location.Y - 20 And PictureBox1.Location.Y + PictureBox1.Height <= Panel1.Location.Y Then
+            PictureBox1.Location = New Point(PictureBox1.Location.X, Panel1.Location.Y - PictureBox1.Height)
             caida.Enabled = False
             gravedad.Enabled = False
             animacion_quieto = 1
