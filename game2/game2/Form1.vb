@@ -10,6 +10,7 @@
     Dim vida As Integer = 200
     Dim power As Integer = 100
     Dim ataque As Integer
+    Dim contador_salto As Integer
 
 
 
@@ -83,14 +84,14 @@
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles movimiento.Tick
         If caminar1 = 1 Then
-            PictureBox1.Location = New Point(PictureBox1.Location.X + 1, PictureBox1.Location.Y)
+            PictureBox1.Location = New Point(PictureBox1.Location.X + 2, PictureBox1.Location.Y)
         End If
         If caminar2 = 1 Then
-            PictureBox1.Location = New Point(PictureBox1.Location.X - 1, PictureBox1.Location.Y)
+            PictureBox1.Location = New Point(PictureBox1.Location.X - 2, PictureBox1.Location.Y)
         End If
 
         If PictureBox1.Location.X = Panel2.Location.X - 50 Then
-            PictureBox1.Location = New Point(PictureBox1.Location.X - 1, PictureBox1.Location.Y)
+            PictureBox1.Location = New Point(PictureBox1.Location.X - 2, PictureBox1.Location.Y)
         End If
 
 
@@ -101,14 +102,15 @@
 
 
         If salto = 1 Then
-
-            PictureBox1.Location = New Point(PictureBox1.Location.X, PictureBox1.Location.Y - 1)
-
+            desplazamiento = desplazamiento + 0.1
+            PictureBox1.Location = New Point(PictureBox1.Location.X, PictureBox1.Location.Y - desplazamiento)
+            contador_salto = contador_salto + 1
         End If
-        If PictureBox1.Location.Y = 100 Then
+        If PictureBox1.Location.Y < 30 And PictureBox1.Location.Y > 7 Then
             salto = 0
             gravedad.Enabled = False
             caida.Enabled = True
+            desplazamiento = 0.5
 
         End If
 
@@ -118,14 +120,16 @@
 
 
     Private Sub Timer3_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles caida.Tick
-        desplazamiento = desplazamiento + 0.05
+        desplazamiento = desplazamiento + 0.1
         PictureBox1.Location = New Point(PictureBox1.Location.X, PictureBox1.Location.Y + desplazamiento)
+
+
         If PictureBox1.Location.Y + PictureBox1.Height > Panel1.Location.Y - 20 And PictureBox1.Location.Y + PictureBox1.Height <= Panel1.Location.Y Then
             PictureBox1.Location = New Point(PictureBox1.Location.X, Panel1.Location.Y - PictureBox1.Height)
             caida.Enabled = False
             gravedad.Enabled = False
             animacion_quieto = 1
-
+            desplazamiento = 0
         End If
 
     End Sub
@@ -236,7 +240,7 @@
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        PictureBox2.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
+
 
 
     End Sub
