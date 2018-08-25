@@ -102,7 +102,8 @@
 
 
         If salto = 1 Then
-            desplazamiento = desplazamiento + 0.1
+            desplazamiento = 3
+            desplazamiento = desplazamiento - 0.1
             PictureBox1.Location = New Point(PictureBox1.Location.X, PictureBox1.Location.Y - desplazamiento)
             contador_salto = contador_salto + 1
         End If
@@ -255,7 +256,12 @@
         If ataque = 1 Then
             power = power - 10
         End If
+
+        If poder.Width > 200 Then
+            poder.Width = 200
+        End If
     End Sub
+
 
 
    

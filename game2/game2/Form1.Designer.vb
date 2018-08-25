@@ -122,7 +122,7 @@ Partial Class Form1
         'poder
         '
         Me.poder.BackColor = System.Drawing.Color.Cyan
-        Me.poder.Location = New System.Drawing.Point(86, 50)
+        Me.poder.Location = New System.Drawing.Point(84, 50)
         Me.poder.Name = "poder"
         Me.poder.Size = New System.Drawing.Size(200, 11)
         Me.poder.TabIndex = 11
@@ -141,7 +141,7 @@ Partial Class Form1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = Global.game2.My.Resources.Resources.snap6
-        Me.PictureBox1.Location = New System.Drawing.Point(195, 159)
+        Me.PictureBox1.Location = New System.Drawing.Point(164, 156)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(120, 201)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -167,7 +167,7 @@ Partial Class Form1
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.Cyan
-        Me.Panel5.Location = New System.Drawing.Point(561, 50)
+        Me.Panel5.Location = New System.Drawing.Point(559, 50)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(200, 11)
         Me.Panel5.TabIndex = 14
