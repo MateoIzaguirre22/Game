@@ -37,15 +37,17 @@ Partial Class Form1
         Me.vida1 = New System.Windows.Forms.Panel()
         Me.poder = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Player2 = New game2.PictureBoxTransparente()
+        Me.Player1 = New game2.PictureBoxTransparente()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Player2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Player1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'movimiento
@@ -137,17 +139,6 @@ Partial Class Form1
         Me.PictureBox2.TabIndex = 10
         Me.PictureBox2.TabStop = False
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.game2.My.Resources.Resources.snap6
-        Me.PictureBox1.Location = New System.Drawing.Point(164, 156)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(120, 201)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
-        '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.SystemColors.ControlDarkDark
@@ -196,12 +187,40 @@ Partial Class Form1
         Me.Label3.TabIndex = 16
         Me.Label3.Text = "Label3"
         '
+        'Player2
+        '
+        Me.Player2.BackColor = System.Drawing.Color.Transparent
+        Me.Player2.ErrorImage = Nothing
+        Me.Player2.Image = Nothing
+        Me.Player2.InitialImage = Nothing
+        Me.Player2.Location = New System.Drawing.Point(424, 159)
+        Me.Player2.Name = "Player2"
+        Me.Player2.Size = New System.Drawing.Size(141, 198)
+        Me.Player2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Player2.TabIndex = 18
+        Me.Player2.TabStop = False
+        '
+        'Player1
+        '
+        Me.Player1.BackColor = System.Drawing.Color.Transparent
+        Me.Player1.ErrorImage = Nothing
+        Me.Player1.Image = Nothing
+        Me.Player1.InitialImage = Nothing
+        Me.Player1.Location = New System.Drawing.Point(159, 156)
+        Me.Player1.Name = "Player1"
+        Me.Player1.Size = New System.Drawing.Size(142, 201)
+        Me.Player1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Player1.TabIndex = 17
+        Me.Player1.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(858, 491)
+        Me.Controls.Add(Me.Player2)
+        Me.Controls.Add(Me.Player1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.Panel4)
@@ -214,13 +233,13 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Player2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Player1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -231,7 +250,6 @@ Partial Class Form1
     Friend WithEvents Animacion As System.Windows.Forms.Timer
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
@@ -245,5 +263,7 @@ Partial Class Form1
     Friend WithEvents Panel6 As System.Windows.Forms.Panel
     Friend WithEvents Panel7 As System.Windows.Forms.Panel
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Player1 As game2.PictureBoxTransparente
+    Friend WithEvents Player2 As game2.PictureBoxTransparente
 
 End Class

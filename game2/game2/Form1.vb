@@ -68,10 +68,10 @@
         End If
         If e.KeyCode = Keys.A Then
             ataque = 0
-            PictureBox2.Dispose()
+            player2.Dispose()
         End If
 
-        
+
     End Sub
 
 
@@ -84,14 +84,14 @@
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles movimiento.Tick
         If caminar1 = 1 Then
-            PictureBox1.Location = New Point(PictureBox1.Location.X + 2, PictureBox1.Location.Y)
+            Player1.Location = New Point(Player1.Location.X + 2, player1.Location.Y)
         End If
         If caminar2 = 1 Then
-            PictureBox1.Location = New Point(PictureBox1.Location.X - 2, PictureBox1.Location.Y)
+            player1.Location = New Point(player1.Location.X - 2, player1.Location.Y)
         End If
 
-        If PictureBox1.Location.X = Panel2.Location.X - 50 Then
-            PictureBox1.Location = New Point(PictureBox1.Location.X - 2, PictureBox1.Location.Y)
+        If player1.Location.X = Panel2.Location.X - 50 Then
+            player1.Location = New Point(player1.Location.X - 2, player1.Location.Y)
         End If
 
 
@@ -104,10 +104,10 @@
         If salto = 1 Then
             desplazamiento = 3
             desplazamiento = desplazamiento - 0.1
-            PictureBox1.Location = New Point(PictureBox1.Location.X, PictureBox1.Location.Y - desplazamiento)
+            player1.Location = New Point(player1.Location.X, player1.Location.Y - desplazamiento)
             contador_salto = contador_salto + 1
         End If
-        If PictureBox1.Location.Y < 30 And PictureBox1.Location.Y > 7 Then
+        If player1.Location.Y < 30 And player1.Location.Y > 7 Then
             salto = 0
             gravedad.Enabled = False
             caida.Enabled = True
@@ -122,11 +122,11 @@
 
     Private Sub Timer3_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles caida.Tick
         desplazamiento = desplazamiento + 0.1
-        PictureBox1.Location = New Point(PictureBox1.Location.X, PictureBox1.Location.Y + desplazamiento)
+        player1.Location = New Point(player1.Location.X, player1.Location.Y + desplazamiento)
 
 
-        If PictureBox1.Location.Y + PictureBox1.Height > Panel1.Location.Y - 20 And PictureBox1.Location.Y + PictureBox1.Height <= Panel1.Location.Y Then
-            PictureBox1.Location = New Point(PictureBox1.Location.X, Panel1.Location.Y - PictureBox1.Height)
+        If player1.Location.Y + player1.Height > Panel1.Location.Y - 20 And player1.Location.Y + player1.Height <= Panel1.Location.Y Then
+            player1.Location = New Point(player1.Location.X, Panel1.Location.Y - player1.Height)
             caida.Enabled = False
             gravedad.Enabled = False
             animacion_quieto = 1
@@ -138,16 +138,16 @@
     Private Sub Timer4_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Animacion.Tick
         animacion_quieto = 1
 
-        If PictureBox2.Location.X < PictureBox1.Location.X Then
-            PictureBox2.Image = My.Resources.snap1
+        If player2.Location.X < player1.Location.X Then
+            player2.Image = My.Resources.snap1
         Else
-            PictureBox2.Image = My.Resources.snap1
-            PictureBox2.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
+            player2.Image = My.Resources.snap1
+            player2.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
         End If
 
 
-        If PictureBox2.Location.X > PictureBox1.Location.X Then
-            PictureBox1.Image = My.Resources.snap1
+        If player2.Location.X > player1.Location.X Then
+            player1.Image = My.Resources.snap1
         Else
             animacion_quieto = 2
         End If
@@ -164,10 +164,10 @@
                 contador = contador * 0
             End If
             If contador = 1 Then
-                PictureBox1.Image = My.Resources.snap1
+                player1.Image = My.Resources.snap1
             End If
             If contador = 2 Then
-                PictureBox1.Image = My.Resources.snap2
+                player1.Image = My.Resources.snap2
             End If
 
         End If
@@ -178,12 +178,12 @@
                 contador = contador * 0
             End If
             If contador = 1 Then
-                PictureBox1.Image = My.Resources.snap1
-                PictureBox1.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
+                player1.Image = My.Resources.snap1
+                player1.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
             End If
             If contador = 2 Then
-                PictureBox1.Image = My.Resources.snap2
-                PictureBox1.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
+                player1.Image = My.Resources.snap2
+                player1.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
             End If
 
         End If
@@ -198,16 +198,16 @@
                 contador = contador * 0
             End If
             If contador = 0 Then
-                PictureBox1.Image = My.Resources.snap3
+                player1.Image = My.Resources.snap3
             End If
             If contador = 1 Then
-                PictureBox1.Image = My.Resources.snap4
+                player1.Image = My.Resources.snap4
             End If
             If contador = 2 Then
-                PictureBox1.Image = My.Resources.snap5
+                player1.Image = My.Resources.snap5
             End If
             If contador = 3 Then
-                PictureBox1.Image = My.Resources.snap6
+                player1.Image = My.Resources.snap6
             End If
         End If
 
@@ -218,20 +218,20 @@
                 contador = contador * 0
             End If
             If contador = 0 Then
-                PictureBox1.Image = My.Resources.snap3
-                PictureBox1.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
+                player1.Image = My.Resources.snap3
+                player1.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
             End If
             If contador = 1 Then
-                PictureBox1.Image = My.Resources.snap4
-                PictureBox1.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
+                player1.Image = My.Resources.snap4
+                player1.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
             End If
             If contador = 2 Then
-                PictureBox1.Image = My.Resources.snap5
-                PictureBox1.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
+                player1.Image = My.Resources.snap5
+                player1.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
             End If
             If contador = 3 Then
-                PictureBox1.Image = My.Resources.snap6
-                PictureBox1.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
+                player1.Image = My.Resources.snap6
+                player1.Image.RotateFlip(RotateFlipType.Rotate180FlipY)
             End If
         End If
 
@@ -246,11 +246,11 @@
 
     End Sub
 
-   
+
     Private Sub Timer1_Tick_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         vida1.Width = vida
         poder.Width = power
-        If PictureBox1.Location.X = PictureBox2.Location.X Then
+        If player1.Location.X = player2.Location.X Then
             vida = vida - 26
         End If
         If ataque = 1 Then
