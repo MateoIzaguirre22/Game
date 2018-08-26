@@ -39,7 +39,6 @@ Partial Class Form1
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Player2 = New game2.PictureBoxTransparente()
         Me.Player1 = New game2.PictureBoxTransparente()
-        Me.Panel7 = New System.Windows.Forms.Panel()
         CType(Me.Player2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Player1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -163,21 +162,12 @@ Partial Class Form1
         Me.Player1.TabIndex = 17
         Me.Player1.TabStop = False
         '
-        'Panel7
-        '
-        Me.Panel7.BackColor = System.Drawing.Color.Transparent
-        Me.Panel7.Location = New System.Drawing.Point(390, 156)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(118, 195)
-        Me.Panel7.TabIndex = 19
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(858, 491)
-        Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.Player2)
         Me.Controls.Add(Me.Player1)
         Me.Controls.Add(Me.Panel4)
@@ -212,6 +202,5 @@ Partial Class Form1
     Friend WithEvents Panel6 As System.Windows.Forms.Panel
     Friend WithEvents Player1 As game2.PictureBoxTransparente
     Friend WithEvents Player2 As game2.PictureBoxTransparente
-    Friend WithEvents Panel7 As System.Windows.Forms.Panel
 
 End Class

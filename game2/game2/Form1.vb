@@ -241,7 +241,7 @@
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        Panel7.BackgroundImage = My.Resources.snap1
+
 
 
     End Sub
